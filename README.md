@@ -27,10 +27,10 @@ Starting point for your custom hybrid Android application.
 Rapid development
 If you don't need a lot to functionality or interaction with the device can mean a very short development time.
 
-<a href="https://www.youtube.com/shorts/HRoMBfgjWtQ">Template One</a>
-<a href="https://www.youtube.com/shorts/abgX1SRl4v4">Template Two</a>
-<a href="https://www.youtube.com/shorts/b7EyuWgTHmc">Template Three</a>
-<a href="https://www.youtube.com/shorts/xlWDAmHnErU">Template Four</a>
+<a href="https://www.youtube.com/shorts/HRoMBfgjWtQ">Template One</a></br>
+<a href="https://www.youtube.com/shorts/abgX1SRl4v4">Template Two</a></br>
+<a href="https://www.youtube.com/shorts/b7EyuWgTHmc">Template Three</a></br>
+<a href="https://www.youtube.com/shorts/xlWDAmHnErU">Template Four</a></br>
 
 ## Customizing the templates with HTML content
 Read the Customize_TemplateOne.txt, Customzie_TemplateTwo.txt, Customize_TempalteThree.txt on how to customize the HTML content that you want to use.
