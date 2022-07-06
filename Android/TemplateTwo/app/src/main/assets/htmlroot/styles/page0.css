@@ -1,0 +1,15 @@
+.title {
+	text-align: center;
+	font-size: 24px;
+}
+
+#content {
+	width:90%; 
+	height:100%; 
+	background-color:white; 
+	padding-top:50px; 
+	font-size:20px; 
+	color:#000000;
+	margin: 0px auto;
+	position: relative;
+}

@@ -1,0 +1,115 @@
+1. The HTML content should be placed in the src/main/assets/htmlroot directory.
+Delete all the content that is currently in the assets/htmlroot directory and paste in your content - HTML pages, css, images, Javascript.
+
+2. Update the content of the menu and the pages that should be loaded when an item from the menu is selected.
+The changes are made in the:
+src/main/res/values/menu_item_labels.xml - label for the menu items
+src/main/res/values/menu_item_urls.xml - URLs for the pages that should be loaded
+
+Exaples:
+If we want to have only two items in the menu called Introduction and Data, which display introduction.html and data.html pages, we would change menu_item_labels.xml from:
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_item_labels">	
+	<item>Introduction</item>
+	<item>Data</item>
+    </string-array>
+</resources>
+
+And we would change the menu_item_urls.xml to:
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_item_labels">	
+	<item>file:///android_asset/htmlroot/introduction.html</item>
+	<item>file:///android_asset/htmlroot/data.html</item>
+    </string-array>
+</resources>
+
+As we can see the only chage is in the number of item tags we have and the text content between the  openning (<item>) and closing (</item>) tags.
+For the menu_item_urls items you could supply file:///android_asset/htmlroot/<your page name.html> if you have placed a file with that name in the assets/htmlroot directory of the project. You could also supply any valid URL accessible on the internet - http://domain/path. Altough we don't recommend that, because it will slow down the loading of the content depending on the network speed.
+
+
+
+3. Update the application icon.
+Place your icon named ic_launcher.png in the 
+src/main/res/mipmap-hdpi    - resolution 72x72 pixels
+src/main/res/mipmap-mdpi    - resolution 48x48 pixels
+src/main/res/mipmap-xhdpi   - resolution 96x96 pixels
+src/main/res/mipmap-xxhdpi  - resolution 144x144 pixels
+src/main/res/mipmap-xxxhdpi - resolution 192x192 pixels
+
+directories.
+The icon file must be saved from an image editing application as a png file. If it is another file format and we just rename it to .png extension it would cause problems and not function properly.
+
+
+4. Update the template values with your desired values:
+In the files
+src/java/com/apptemplate/templateone/ConstantsT.java
+src/main/res/values/colors.xml
+src/main/res/values/strings.xml
+
+ - ConstantsT.java:
+    /**
+     * Color for the background of the menu
+     * The values can be 0-255 for each of the parameters of the used method - Color.argb(alpha, red, green, blue).
+     */
+    public static final int kMenuBackgroundColor = Color.argb(255, 0, 153, 204);
+
+    /**
+     * Color for the background of the menu item that is currently selected
+     * The values can be 0-255 for each of the parameters of the used method - Color.argb(alpha, red, green, blue).
+     */
+    public static final int kMenuBackgroundColorSelectedItem = Color.argb(255, 0, 100, 255);
+
+    /**
+     * Color for the text in the menu
+     * The values can be 0-255 for each of the parameters of the used method - Color.argb(alpha, red, green, blue).
+     */
+    public static final int kMenuTextColor = Color.argb(255, 0, 0, 0);
+
+    /** Size of the text in the menu */
+    public static final int kMenuTextSize = 18;
+
+    /**
+     * Style of the text in the menu.
+     * One of defined in ConstantsT values:
+     * TEXT_STYLE_NORMAL
+     * TEXT_STYLE_BOLD
+     * TEXT_STYLE_ITALIC
+     */
+    public static final int kMenuTextStyle = TEXT_STYLE_NORMAL;
+
+    /** Content that will be displayed if there is an error when loading a html content page. */
+    public static final String kErrorPageUrl = "file:///android_asset/htmlroot/error_page.html";
+
+
+
+ - colors.xml:
+	Colors for the theme of the application in hexadecimal values. Here the colors are:
+	#3F51B5
+	#303F9F
+	#FF4081
+
+
+ - strings.xml
+	Name of the application. Here the name of the application is TemplateOne
+
+
+
+5.In Android Studio rename the package with your own unique package (reverse domain).
+Example:
+your domain is - www.yourdomain.com
+Right click on the package in app/src/main/java/com.apptemplate.templateone and select "Refactor->Rename".
+In the dialog that will come up select "Rename package".
+Type the name of the package - com.yourdomain.selectedname
+Press "OK" button.
+Press the "Do refactor" button.
+
+
+6.Update the application id in the build.gradle file.
+app/build.gradle
+
+applicationId "com.apptemplate.templatetwo" - change to the value that you set in step 5 for the package.
+
+Example:
+applicationId "com.yourdomain.selectedname

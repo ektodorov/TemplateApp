@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_item_urls">
+        <item>file:///android_asset/htmlroot/Page0.html</item>
+        <item>file:///android_asset/htmlroot/Page1.html</item>
+        <item>file:///android_asset/htmlroot/Page2.html</item>
+        <item>file:///android_asset/htmlroot/Page3.html</item>
+        <item>file:///android_asset/htmlroot/Page4.html</item>
+        <item>file:///android_asset/htmlroot/Page5.html</item>
+        <item>file:///android_asset/htmlroot/Page6.html</item>
+        <item>file:///android_asset/htmlroot/Page7.html</item>
+        <item>file:///android_asset/htmlroot/Page8.html</item>
+        <item>file:///android_asset/htmlroot/Page9.html</item>
+        <item>file:///android_asset/htmlroot/Page11.html</item><!-- We don't have Page11.html. This will display the error page -->
+    </string-array>
+</resources>

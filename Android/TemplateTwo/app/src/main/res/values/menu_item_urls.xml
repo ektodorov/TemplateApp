@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_item_urls">
+        <item>file:///android_asset/htmlroot/Page0.html</item>
+        <item>file:///android_asset/htmlroot/Page1.html</item>
+        <item>file:///android_asset/htmlroot/Page2.html</item>
+        <item>file:///android_asset/htmlroot/Page3.html</item>
+    </string-array>
+</resources>

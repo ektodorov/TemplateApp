@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apptemplate.templatethree.MainActivity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/menu_header_height"
+        android:id="@+id/webViewMain"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/menu_closed_margin_top"
+        android:layout_below="@id/webViewMain"
+        android:id="@+id/linearLayoutMenu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_header_height"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:id="@+id/linearLayoutMenuHeader">
+            <Button
+                android:layout_width="@dimen/menu_header_height"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/menu_burger"
+                android:id="@+id/buttonMenu"
+                style="?android:attr/borderlessButtonStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="@string/app_name"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/listViewMenu">
+        </ListView>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:id="@+id/linearLayoutMenu"-->
+        <!--android:layout_marginBottom="0dp">-->
+        <!--<Button-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/linearLayoutMenu"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:layout_marginTop="0dp">-->
+    <!--</ListView>-->
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progressBar"/>
+
+</RelativeLayout>
